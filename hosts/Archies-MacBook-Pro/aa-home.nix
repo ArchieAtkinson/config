@@ -6,6 +6,21 @@
     
     home.stateVersion = "22.11";
 
+    programs.git = 
+    {
+        enable = true;
+        includes = 
+        [
+            { 
+                contents.user = 
+                {
+                email = "archieatkinson97@gmail.com";
+                name = "Archie Atkinson";
+                };
+            }
+        ];
+    };
+
     programs.vscode = 
     {
         enable = true;
