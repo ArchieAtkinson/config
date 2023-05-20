@@ -1,3 +1,23 @@
+## Setup
+Xcode
+	xcode-select --install
+brew
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Nix
+	sh <(curl -L https://nixos.org/nix/install)
+Darwin
+	nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
+	No Channels, yes to basic etc
+	./result/bin/darwin-installer
+
+## My Config
+git clone https://github.com/ArchieAtkinson/config.git
+nix build .#darwinConfigurations.Archies-MacBook-Pro.system --extra-experimental-features "nix-command flakes"
+printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf 
+/System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util -t
+./result/sw/bin/darwin-rebuild switch --flake .
+————  
+darwin-rebuild switch --flake .
 
 ## Mac
 1. Install Nix 
