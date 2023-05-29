@@ -10,11 +10,35 @@
         home = "/Users/aa";
     };
 
-    system.defaults.dock = 
+    system.defaults = 
     {
-        mineffect = "scale";
-        show-recents = false;
-        tilesize = 32;
+        dock =
+        {
+            mineffect = "scale";
+            show-recents = false;
+            tilesize = 32;
+        };
+
+        NSGlobalDomain = 
+        {
+            AppleMeasurementUnits = "Centimeters";
+            AppleShowAllExtensions = true;
+        };
+
+        finder = 
+        {
+            AppleShowAllFiles = true;
+            FXPreferredViewStyle = "Nlsv";
+            ShowPathbar = true;
+            ShowStatusBar = true;
+            _FXShowPosixPathInTitle = true;
+        };
+
+        loginwindow = 
+        {
+            GuestEnabled = false;
+            SHOWFULLNAME = true;
+        };
     };
 
     homebrew =
