@@ -1,6 +1,6 @@
 ## Setup
 Xcode
-	xcode-select --install
+	xcode-select --install  
 brew
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 Nix
@@ -18,6 +18,10 @@ printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf
 ./result/sw/bin/darwin-rebuild switch --flake .
 ————  
 darwin-rebuild switch --flake .
+
+## Todo/Issue
+- nixpkg Rectangle doesn't work
+- How to automate SSH key managment
 
 ## Mac
 1. Install Nix 

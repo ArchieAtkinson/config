@@ -17,7 +17,6 @@
         tilesize = 32;
     };
 
-
     homebrew =
     {
         enable = true;
@@ -26,6 +25,7 @@
         [
             "firefox"
             "dropbox"
+            "rectangle"
         ];
     };
 

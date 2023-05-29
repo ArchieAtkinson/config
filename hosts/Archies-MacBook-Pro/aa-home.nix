@@ -32,7 +32,6 @@
 
     home.packages = 
     [
-        pkgs.rectangle
         pkgs.obsidian
     ];
 
