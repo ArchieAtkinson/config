@@ -25,13 +25,20 @@
     {
         enable = true;
         package = pkgs.vscodium;
-        userSettings = builtins.fromJSON (builtins.readFile ./../../settings.json); 
-        extensions = 
-            with pkgs.vscode-extensions; 
-            [
-                yzhang.markdown-all-in-one
-                bbenoist.nix
-            ];
+        userSettings = 
+        {
+            "window.autoDetectColorScheme" = true;
+            "editor.fontSize" = 12;
+            "files.autoSave" = "afterDelay";
+            "editor.minimap.enabled" = false;
+            "git.confirmSync" = false;
+            "explorer.confirmDragAndDrop" = false;
+        };
+        extensions = with pkgs.vscode-extensions; 
+        [
+            yzhang.markdown-all-in-one
+            bbenoist.nix
+        ];
     };
 
     programs.neovim.enable = true;
@@ -41,9 +48,9 @@
         pkgs.obsidian
     ];
 
-    home.file.rectangle_config = 
+    home.file."rectangle/RectangleConfig.json" = 
     {
-        source = ./RectangleConfig.json;
+        source = ./../../rectangle/RectangleConfig.json;
         target = "/Library/Application Support/Rectangle/RectangleConfig.json";
         onChange = "rm -rf Library/'Application Support'/Rectangle/RectangleConfig20* || true";
         force = true;

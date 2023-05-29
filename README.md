@@ -39,3 +39,5 @@
   - `sudo nix-collect-garbage --delete-old`
 - Switch Version
   - `darwin-rebuild switch --flake .`
+- Open in background (MacOS)
+  - `open -gj -a obsidian`

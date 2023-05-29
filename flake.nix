@@ -25,7 +25,7 @@
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
                     home-manager.users.aa = import ./hosts/Archies-MacBook-Pro/aa-home.nix;
-                 }
+                }
             ];
         };
     };
