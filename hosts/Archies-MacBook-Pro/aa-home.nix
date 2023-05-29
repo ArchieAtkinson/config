@@ -26,7 +26,12 @@
         enable = true;
         package = pkgs.vscodium;
         userSettings = builtins.fromJSON (builtins.readFile ./../../settings.json); 
-        extensions = with pkgs.vscode-extensions; [ yzhang.markdown-all-in-one ];
+        extensions = 
+            with pkgs.vscode-extensions; 
+            [
+                yzhang.markdown-all-in-one
+                bbenoist.nix
+            ];
     };
 
     programs.neovim.enable = true;
