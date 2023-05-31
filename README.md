@@ -28,6 +28,10 @@
     - Gmail
     - Youtube
   - Dropbox
+- Change Scaling 
+  - Setting -> Display -> "More Space"
+- Change background
+- Control Centre -> Blueooth -> "Show in Menu Bar'
   
 
 ## Todo/Issue
@@ -36,6 +40,7 @@
   - and why does it still work when I "uninstall it'
 - How to automate SSH key managment
 - Get apps to show up in spotlight
+- Automate resolution change
 
 ## Useful Commands
 - Delete generations (nix)
