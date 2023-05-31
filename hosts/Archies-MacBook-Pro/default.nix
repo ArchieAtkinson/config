@@ -39,6 +39,11 @@
             GuestEnabled = false;
             SHOWFULLNAME = true;
         };
+
+        CustomUserPreferences = 
+        {
+            "NSGlobalDomain" = {"WebAutomaticTextReplacementEnabled" = false;};
+        };
     };
 
     homebrew =
