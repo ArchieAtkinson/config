@@ -49,7 +49,6 @@
         [
             "firefox"
             "dropbox"
-            "rectangle"
         ];
     };
 

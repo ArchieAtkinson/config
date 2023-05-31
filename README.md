@@ -32,11 +32,16 @@
 
 ## Todo/Issue
 - nixpkg Rectangle doesn't work
+  - Why do I need to use `open -a Rectangle` 
+  - and why does it still work when I "uninstall it'
 - How to automate SSH key managment
+- Get apps to show up in spotlight
 
 ## Useful Commands
-- Delete generations
+- Delete generations (nix)
   - `sudo nix-collect-garbage --delete-old`
+- Delete generations (darwin)
+  - `sudo ./result/sw/bin/nix-collect-garbage -d`
 - Switch Version
   - `darwin-rebuild switch --flake .`
 - Open in background (MacOS)

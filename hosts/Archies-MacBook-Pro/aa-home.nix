@@ -46,6 +46,7 @@
     home.packages = 
     [
         pkgs.obsidian
+        pkgs.rectangle
     ];
 
     home.file."rectangle/RectangleConfig.json" = 
