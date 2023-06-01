@@ -40,6 +40,8 @@
             SHOWFULLNAME = true;
         };
 
+        menuExtraClock.IsAnalog = true;
+
         CustomUserPreferences = 
         {
             "NSGlobalDomain" = {"WebAutomaticTextReplacementEnabled" = false;};
@@ -54,6 +56,7 @@
         [
             "firefox"
             "dropbox"
+            "fuzzyclock"
         ];
     };
 
