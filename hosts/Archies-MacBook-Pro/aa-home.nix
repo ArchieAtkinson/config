@@ -4,7 +4,7 @@
     home.username = pkgs.lib.mkForce "aa";
     home.homeDirectory = pkgs.lib.mkForce "/User/aa";
     
-    home.stateVersion = "22.11";
+    home.stateVersion = "23.05";
 
     programs.git = 
     {
@@ -49,11 +49,11 @@
         pkgs.rectangle
     ];
 
-    home.file."rectangle/RectangleConfig.json" = 
+    home.file."rectangle/RectangleConfig.json" =
     {
         source = ./../../rectangle/RectangleConfig.json;
         target = "/Library/Application Support/Rectangle/RectangleConfig.json";
-        onChange = "rm -rf Library/'Application Support'/Rectangle/RectangleConfig20* || true";
+        onChange = "rm -rf Library/'Application Support'/Rectangle/RectangleConfig20* || true"; # Rectangle renames used conig files, this cleans them up
         force = true;
     };
 
