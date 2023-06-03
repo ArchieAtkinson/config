@@ -29,9 +29,19 @@
     - Youtube
   - Dropbox
 - Change Scaling 
-  - Setting -> Display -> "More Space"
-- Change background
-- Control Centre -> Blueooth -> "Show in Menu Bar'
+- MacOS Settings
+  - Display -> "More Space"
+  - Wallpaper -> Solar Gradients
+  - Control Centre -> Blueooth -> "Show in Menu Bar'
+  - Lockscreen
+    - Start Screen Saver ... -> "Never"
+    - Turn display off on battery ... -> " For 10 minutues"
+    - Turn display off on power ... -> " For 10 minutues"
+    - Require password ... -> "Immediately"
+    - Show message when locked -> "Please contact <Mobile Number> if found"
+- uBlock
+  - Remove YouTube Shorts in List View
+    - `www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)`
   
 
 ## Todo/Issue
@@ -41,6 +51,13 @@
 - How to automate SSH key managment
 - Get apps to show up in spotlight
 - Automate resolution change
+- Automate adding fuzzyclock to logi items 
+  - [See this thread](https://apple.stackexchange.com/questions/310495/can-login-items-be-added-via-the-command-line-in-high-sierra)
+- Create Terminal profile (or find a replace)
+  - Disable audio bell, replace with visual 
+- Write comments on each macos setting for what it does 
+
+
 
 ## Useful Commands
 - Delete generations (nix)
