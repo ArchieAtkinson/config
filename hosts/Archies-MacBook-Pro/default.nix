@@ -14,49 +14,51 @@
     {
         dock =
         {
-            mineffect = "scale";
-            show-recents = false;
-            tilesize = 32;
+            mineffect = "scale"; # Set the minimize/maximize window effect.
+            show-recents = false; # Show recent applications in the dock.
+            tilesize = 32; # Size of the icons in the dock.
+            mru-spaces = false; # Whether to automatically rearrange spaces based on most recent use.
         };
 
         NSGlobalDomain = 
         {
-            AppleMeasurementUnits = "Centimeters";
-            AppleShowAllExtensions = true;
+            AppleMeasurementUnits = "Centimeters"; # Whether to use centimeters (metric) or inches (US, UK) as the measurement unit. 
+            AppleShowAllExtensions = true; # Whether to show all file extensions in Finder.
         };
 
         finder = 
         {
-            AppleShowAllFiles = true;
-            FXPreferredViewStyle = "Nlsv";
-            ShowPathbar = true;
-            ShowStatusBar = true;
-            _FXShowPosixPathInTitle = true;
+            AppleShowAllFiles = true; # Whether to always show hidden files.
+            FXPreferredViewStyle = "Nlsv"; # Change the default finder view. "icnv" = Icon view, "Nlsv" = List view, "clmv" = Column View, "Flwv" = Gallery View.
+            ShowPathbar = true; # Show path breadcrumbs in finder windows.
+            ShowStatusBar = true; # Show status bar at bottom of finder windows with item/disk space stats.
+            _FXShowPosixPathInTitle = true; # Whether to show the full POSIX filepath in the window title.
         };
 
         loginwindow = 
         {
-            GuestEnabled = false;
-            SHOWFULLNAME = true;
+            GuestEnabled = false; # Allow users to login to the machine as guests using the Guest account.
+            SHOWFULLNAME = true; # Displays login window as a name and password field instead of a list of users. 
         };
 
-        menuExtraClock.IsAnalog = true;
+        menuExtraClock.IsAnalog = true; # Show an analog clock instead of a digital one. ( Using FuzzyClock instead )
 
         CustomUserPreferences = 
         {
-            "NSGlobalDomain" = {"WebAutomaticTextReplacementEnabled" = false;};
+            "NSGlobalDomain" = {"WebAutomaticTextReplacementEnabled" = false;}; # whether automatic user defined text replacement is enabled. ( Don't need for desktop )
         };
     };
 
     homebrew =
     {
         enable = true;
-        onActivation.cleanup = "zap";
+        onActivation.cleanup = "zap"; # Cleans up all formulae and cask when removed from nix-darwin
         casks =
         [
             "firefox"
             "dropbox"
             "fuzzyclock"
+            "bluesnooze" # Prevents your sleeping Mac from connecting to Bluetooth accessories.
         ];
     };
 
