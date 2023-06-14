@@ -28,11 +28,10 @@
     - Gmail
     - Youtube
   - Dropbox
-- Change Scaling 
 - MacOS Settings
   - Display -> "More Space"
   - Wallpaper -> Solar Gradients
-  - Control Centre -> Blueooth -> "Show in Menu Bar'
+  - Control Centre -> Bluetooth -> "Show in Menu Bar"
   - Lockscreen
     - Start Screen Saver ... -> "Never"
     - Turn display off on battery ... -> " For 10 minutues"
@@ -42,6 +41,8 @@
 - uBlock
   - Remove YouTube Shorts in List View
     - `www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)`
+- Raycast
+  - [Hotkey](https://manual.raycast.com/hotkey)
   
 
 ## Todo/Issue
@@ -50,12 +51,18 @@
   - and why does it still work when I "uninstall it'
 - How to automate SSH key managment
 - Get apps to show up in spotlight
-- Automate resolution change
+- Automate resolution change 
 - Automate adding fuzzyclock to logi items 
   - [See this thread](https://apple.stackexchange.com/questions/310495/can-login-items-be-added-via-the-command-line-in-high-sierra)
 - Create Terminal profile (or find a replace)
   - Disable audio bell, replace with visual  
+- zsh
+  - zsh in `default.nix` allows typing `codium`
+  - zsh in `aa-home.nix` allows direnv
 
+## Testing
+- check vscode settings.json for possible new global changes
+- dock on the right side
 
 
 ## Useful Commands

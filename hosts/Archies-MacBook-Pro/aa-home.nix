@@ -21,10 +21,21 @@
         ];
     };
 
+    programs.direnv.enable = true;
+    programs.direnv.nix-direnv.enable = true;
+
+    programs.zsh = 
+    {
+        enable = true;
+        initExtra = ''
+        export DIRENV_LOG_FORMAT=""
+        '';
+    };
+
     programs.vscode = 
     {
         enable = true;
-        package = pkgs.vscodium;
+        package = pkgs.vscode;
         userSettings = 
         {
             "window.autoDetectColorScheme" = true;
@@ -43,10 +54,11 @@
 
     programs.neovim.enable = true;
 
-    home.packages = 
+    home.packages = with pkgs;
     [
-        pkgs.obsidian
-        pkgs.rectangle
+        obsidian
+        rectangle
+        raycast # Detects nix GUI apps 
     ];
 
     home.file."rectangle/RectangleConfig.json" =

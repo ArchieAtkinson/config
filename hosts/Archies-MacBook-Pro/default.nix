@@ -18,6 +18,7 @@
             show-recents = false; # Show recent applications in the dock.
             tilesize = 32; # Size of the icons in the dock.
             mru-spaces = false; # Whether to automatically rearrange spaces based on most recent use.
+            autohide = true; # Whether to automatically hide and show the dock.
         };
 
         NSGlobalDomain = 
@@ -59,6 +60,8 @@
             "dropbox"
             "fuzzyclock"
             "bluesnooze" # Prevents your sleeping Mac from connecting to Bluetooth accessories.
+            "onedrive"
+            "arc"
         ];
     };
 
