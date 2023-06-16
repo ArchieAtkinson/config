@@ -57,17 +57,8 @@
     home.packages = with pkgs;
     [
         obsidian
-        rectangle
         raycast # Detects nix GUI apps 
     ];
-
-    home.file."rectangle/RectangleConfig.json" =
-    {
-        source = ./../../rectangle/RectangleConfig.json;
-        target = "/Library/Application Support/Rectangle/RectangleConfig.json";
-        onChange = "rm -rf Library/'Application Support'/Rectangle/RectangleConfig20* || true"; # Rectangle renames used conig files, this cleans them up
-        force = true;
-    };
 
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
