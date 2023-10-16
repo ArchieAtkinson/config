@@ -74,3 +74,5 @@
   - `darwin-rebuild switch --flake .`
 - Open in background (MacOS)
   - `open -gj -a obsidian`
+- Update the lock file
+  - `nix flake update`

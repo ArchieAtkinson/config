@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
-{
-    home.username = pkgs.lib.mkForce "aa";
-    home.homeDirectory = pkgs.lib.mkForce "/User/aa";
-    
+{   
     home.stateVersion = "23.05";
 
     programs.git = 
