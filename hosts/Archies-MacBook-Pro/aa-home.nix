@@ -46,6 +46,7 @@
         [
             yzhang.markdown-all-in-one
             bbenoist.nix
+            ms-vscode-remote.remote-containers
         ];
     };
 

@@ -62,6 +62,7 @@
             "bluesnooze" # Prevents your sleeping Mac from connecting to Bluetooth accessories.
             "onedrive"
             "arc"
+            "docker"
         ];
     };
 
